@@ -23,6 +23,10 @@ $date = new DateTime();
 echo $date->format('d-m-y h:i:s');
 echo "<br>";
 
+
+/*********  TRABALHANDO COM DATA NO PHP *********/
+
+
 /**
  * -> P represetação de periodo: vem antes de dia , mês, ano e semana
  * Y anos
@@ -52,3 +56,6 @@ echo "<br>";
 $intervalo = new DateInterval('P5DT10H50M');
 $date->sub($intervalo);
 print_r($date);
+
+
+
