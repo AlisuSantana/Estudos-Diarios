@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require('src/valitedSession.php');
 ?>
 
 <!DOCTYPE html>
@@ -16,12 +16,19 @@
     <form action="script.php" method="POST">
 
         <?php
-            $error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+            $error = getMessageError();
             if(!empty($error)) {            
-                echo $error;                
+                echo $error;          
+                removerSessionError();      
+            }
+
+            $success = getMessageSuccess();
+            if(!empty($success) && empty($error)) {            
+                echo $success;    
+                removerSessionSuccess();            
             }
         ?>
-
+   
         <div>
             <Label for="name">Seu Nome</Label><br>
             <input type="text" id="name" name="name" placeholder="nome">
