@@ -32,7 +32,7 @@ try {
     echo $ex->getMessage();
     die();
 } finally {
-    echo "Status de Operação: " . (int)$status;  // CAST | qunado usar o cast ?
+    echo "Status de Operação: " . (int)$status;  // CAST
 }
 
 echo "\n... executando ...\n";
