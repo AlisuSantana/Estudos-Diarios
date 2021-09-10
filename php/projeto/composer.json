@@ -1,0 +1,12 @@
+{
+    "name": "allyson/projeto",
+    "authors": [
+        {
+            "name": "Allyson Santana",
+            "email": "santana.allyson886@gmail.com"
+        }
+    ],
+    "require": {
+        "wead/digital-cep": "^1.0"
+    }
+}
