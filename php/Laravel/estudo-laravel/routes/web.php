@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\{
+    UserController
+};
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::post('/user/create',[UserController::class, 'store'])->name('user.store');
+
+Route::post('user/list',[UserController::class, 'list'])->name('user.list');
+
+
+
