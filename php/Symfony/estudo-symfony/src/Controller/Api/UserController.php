@@ -2,23 +2,25 @@
 
 namespace App\Controller\Api;
 
-use Illuminate\Http\Resources\Json\JsonResource;
+
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Routing\Annotation\Route;
 
 class UserController 
 {
     /**
-    * @Route("/lista", methods={"GET}, name="lista")
+    * @Route("/lista", methods={"GET"}, name="lista")
     */
-    public function lista(): JsonResource
+    public function lista(): JsonResponse
     {
-        return new JsonResource(["Implementando lista na Api", 404]);
+        return new JsonResponse(["Implementando lista na Api"], 404);
     }
 
     /**
-    * @Route("/cadastro", methods={"POST}, name="lista")
+    * @Route("/cadastro", methods={"POST"}, name="cadastro")
     */
-    public function cadastro(): JsonResource
+    public function cadastro(): JsonResponse
     {
-        return new JsonResource(["Implementando cadastro na Api", 404]);
+        return new JsonResponse(["Implementando cadastro na Api"], 404);
     }
 }
