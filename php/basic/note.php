@@ -3,6 +3,7 @@
 // Required is at the beginning of the script
 declare(strict_types=1);
 
+
 session_start();
 
 // set SESSION
@@ -35,6 +36,7 @@ function getMessageError() : ?string // this ?
 {
     return null;
 }
+
 
 
 

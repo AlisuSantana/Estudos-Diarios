@@ -8,7 +8,7 @@ class AccountBank
     private string $nameTitle;
     private string $numberAgency;
     private string $numberAccount;
-    private float $accountBalance;
+    private float $accountBalance; 
 
     public function __construct(
         string $bank,
