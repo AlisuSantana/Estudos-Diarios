@@ -68,7 +68,7 @@ console.log(person.walk(15));
 
 console.log("__________________");
 var x = 5;
-var y = 2
+var y = 2;
 console.log(x % y);
 console.log(x %2 );
 console.log(y %2 );
