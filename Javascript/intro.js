@@ -97,7 +97,7 @@ for (const key of hardware) {
  * split('x') - Retorna um array quebrando a string por um delimitador
  * replace('Text', 'Texts') - Busca por um valor e substitui por outro
  * slice(0,-1) - Retonar a fatia de um valor
- * substr(0,2) - Retorna N caracteres a partir de uma posição
+ * substr(0,2) - Retorna any caracteres a partir de uma posição
  */
 
 /** Funcões de numeros

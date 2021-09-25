@@ -1,6 +1,6 @@
 // CallBack e Promises \\
 
-// Uma promises pode eter três status
+// Uma promises pode ter três status
     // Pending -- Em execução
     // Fullfilled -- Terminou de executa
     // Rejected -- caso haja um erro
