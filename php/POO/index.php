@@ -2,8 +2,17 @@
 
 include('Classes/accountBanck.php');
 
-
-$account = new AccountBank('NuBank', 'Allyson', '1234', '171627-9', '3500');
+/**
+ * NAMED ARGUMENTS
+ */
+$account = new AccountBank (
+    nameTitle: 'Allyson', 
+    numberAccount: '171627-9', 
+    numberAgency: '1234', 
+    bank: 'NuBank',
+    accountBalance: 3500
+);
+print_r($account);
 
 
 echo $account->getBalance();
@@ -56,6 +65,4 @@ echo "<br>";
 $intervalo = new DateInterval('P5DT10H50M');
 $date->sub($intervalo);
 print_r($date);
-
-
 

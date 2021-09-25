@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
+use phpDocumentor\Reflection\Types\Boolean;
+
 class AccountBank 
 {
-    private string $bank;
-    private string $nameTitle;
-    private string $numberAgency;
-    private string $numberAccount;
-    private float $accountBalance; 
-
+    /**
+     * CONSTRUCT PROMOTION
+     * Mixed types represents that the variable can receive any type of data
+     */
     public function __construct(
-        string $bank,
-        string $nameTitle,
-        string $numberAgency,
-        string $numberAccount,
-        float $accountBalance
+       private string $bank,
+       private string $nameTitle,
+       private string $numberAgency,
+       private string $numberAccount,
+       private int|float $accountBalance,
     ) {
         $this->bank = $bank;
         $this->nameTitle = $nameTitle;
@@ -43,3 +43,4 @@ class AccountBank
     }
 
 }
+
