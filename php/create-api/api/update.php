@@ -8,7 +8,7 @@ if ($method === 'put') {
     
     parse_str(file_get_contents('php://input'), $input);
 
-    $id = filter_var($input['id'] ?? null);
+    $id   = filter_var($input['id']   ?? null);
     $name = filter_var($input['name'] ?? null);
     $nasc = filter_var($input['nasc'] ?? null);
 

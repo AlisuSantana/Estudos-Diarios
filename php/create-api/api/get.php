@@ -7,6 +7,7 @@ $method = strtolower($_SERVER['REQUEST_METHOD']);
 if ($method === 'get') {
     
     $id = filter_input(INPUT_GET, 'id');
+    
     if ($id) {
         
         $sql = $pdo->prepare("SELECT * FROM tb_users WHERE id = :id");
